@@ -1,5 +1,10 @@
 package delegation
 
+/**
+ * Created by Rajendhiran Easu on 07/10/22.
+ * Description: Delegation `by` Trails with image source loader
+ */
+
 fun main() {
     val url = "http://yourapp.photos.now/photo/0"
 

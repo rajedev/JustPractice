@@ -1,4 +1,4 @@
-
+package basics
 class Operators {
     fun add(a: Int, b: Int) = a + b
     fun inc(a: Int) = a + 1

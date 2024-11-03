@@ -1,4 +1,4 @@
-/*
+package snowbowl/*
 Bowling Game - Design Understanding
 
 [X] Setup the Frame
@@ -94,7 +94,8 @@ class Bowling {
 fun main() {
     val game = Bowling()
     // Construct frames directly
-    val frames = arrayOf(Frame(10, 0), Frame(7, 3),
+    val frames = arrayOf(
+        Frame(10, 0), Frame(7, 3),
         Frame(9, 0), Frame(10, 0),
         Frame(0, 8), Frame(8, 2),
         Frame(0, 6), Frame(10, 0),

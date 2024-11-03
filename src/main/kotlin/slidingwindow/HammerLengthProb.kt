@@ -1,4 +1,4 @@
-/*
+package slidingwindow/*
 Hammer Length:
 
  [-] Setup Board

@@ -1,3 +1,5 @@
+package slidingwindow
+
 /**
  * Created by Rajendhiran Easu on 04/05/24.
  * Description: Sliding Window logic to find the max. sum of sub-array of size K
