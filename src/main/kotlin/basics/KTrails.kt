@@ -1,7 +1,5 @@
 package basics
 
-import kotlin.random.Random
-
 /**
  * Created by Rajendhiran Easu on 02/07/25.
  * Description:
@@ -69,12 +67,12 @@ fun main() {
     /* var x ="Tester info "
      x = x.plus("Data")
      println(x)*/
-    val randomList = listOf("xx", "xxye", "sad", "tst")
-    println(randomList.size)
-    val ran = Random.nextInt(from = 0, until = randomList.size)
-    println(ran)
-    val sourceList = randomList.slice(0..ran)
-    println(sourceList)
+//    val randomList = listOf("xx", "xxye", "sad", "tst")
+//    println(randomList.size)
+//    val ran = Random.nextInt(from = 0, until = randomList.size)
+//    println(ran)
+//    val sourceList = randomList.slice(0..ran)
+//    println(sourceList)
 
     /*try {
         test0()
@@ -87,6 +85,27 @@ fun main() {
 //    val randomItem = mylist.shuffled().take(3)
 //    println(randomItem)
 
+    val e1 = {
+        println("execution1")
+    }
+
+    val e2 = {
+        println("execution2")
+    }
+
+    inlinetest(e1) {
+        println("execution2")
+       return // if enables crossinine local return not allowed.
+    }
+}
+
+
+inline fun inlinetest(exec: () -> Unit, exec1: ()-> Int) { //crossinline -- will not allow local return
+    println("Inlinetest - Start")
+    exec()
+    println("Inlinetest - Done")
+    exec1()
+    println("Inlinetest - exec1 - done")
 }
 
 fun test0() {
